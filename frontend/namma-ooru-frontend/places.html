@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Places & Guides</title>
+    <style>
+        body {
+            font-family: Arial;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h2 {
+            margin-top: 30px;
+        }
+
+        .grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .card {
+            border: 1px solid #ccc;
+            padding: 15px;
+            width: 150px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .guide-card {
+            border: 1px solid #444;
+            padding: 15px;
+            width: 200px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        button {
+            margin-top: 10px;
+            padding: 8px;
+            cursor: pointer;
+            background: black;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Explore City</h1>
+
+<h2>📍 Places</h2>
+<div id="places" class="grid"></div>
+
+<h2>👨‍💼 Available Guides</h2>
+<div id="guides" class="grid"></div>
+
+<script src="places.js"></script>
+<button onclick="window.location.href='my-bookings.html'">
+    My Bookings
+</button>
+</body>
+</html>
