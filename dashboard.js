@@ -9,5 +9,5 @@ function goToBookings() {
 function logout() {
     localStorage.clear();
     alert("Logged out ✅");
-    window.location.href = "login.html";
+    window.location.href = "index.html";
 }
