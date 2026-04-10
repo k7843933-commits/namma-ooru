@@ -14,7 +14,7 @@ if (!cityId) {
 }
 
 // 📡 Fetch guides by city
-fetch(`http://localhost:8082/guide/city/${cityId}`, {
+fetch(`https://namma-ooru-3.onrender.com/guide/city/${cityId}`, {
     method: "GET",
     headers: {
         "Authorization": "Bearer " + token

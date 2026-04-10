@@ -9,7 +9,7 @@ if (!token || !touristId) {
 // ======================
 // 🔥 LOAD BOOKINGS
 // ======================
-fetch(`http://localhost:8082/booking/tourist/${touristId}`, {
+fetch(`https://namma-ooru-3.onrender.com/booking/tourist/${touristId}`, {
     headers: {
         "Authorization": "Bearer " + token
     }
@@ -88,7 +88,7 @@ function cancelBooking(id) {
         return;
     }
 
-    fetch(`http://localhost:8082/booking/cancel/${id}`, {
+    fetch(`https://namma-ooru-3.onrender.com/booking/cancel/${id}`, {
         method: "PUT",
         headers: {
             "Content-Type": "application/json",
@@ -130,7 +130,7 @@ function giveReview(bookingId, guideId) {
         return;
     }
 
-    fetch(`http://localhost:8082/review/add/${bookingId}`, {
+    fetch(`https://namma-ooru-3.onrender.com/review/add/${bookingId}`, {
         method: "POST",
         headers: {
             "Content-Type": "application/json",

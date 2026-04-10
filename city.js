@@ -7,7 +7,7 @@ if (!token) {
 }
 
 // 🔥 Fetch cities
-fetch("http://localhost:8082/city/all", {
+fetch("https://namma-ooru-3.onrender.com/city/all", {
     method: "GET",
     headers: {
         "Authorization": "Bearer " + token

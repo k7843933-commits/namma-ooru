@@ -4,7 +4,7 @@ const cityId = localStorage.getItem("cityId");
 // ======================
 // 🔥 LOAD PLACES
 // ======================
-fetch(`http://localhost:8082/place/city/${cityId}`, {
+fetch(`https://namma-ooru-3.onrender.com/place/city/${cityId}`, {
     headers: {
         "Authorization": "Bearer " + token
     }
@@ -38,7 +38,7 @@ fetch(`http://localhost:8082/place/city/${cityId}`, {
 // ======================
 // 🔥 LOAD GUIDES
 // ======================
-fetch(`http://localhost:8082/guide/city/${cityId}`, {
+fetch(`https://namma-ooru-3.onrender.com/guide/city/${cityId}`, {
     headers: {
         "Authorization": "Bearer " + token
     }

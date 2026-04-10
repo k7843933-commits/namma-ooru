@@ -74,7 +74,7 @@ function confirmBooking() {
         return;
     }
 
-    fetch("http://localhost:8082/booking/add", {
+    fetch("https://namma-ooru-3.onrender.com/booking/add", {
         method: "POST",
         headers: {
             "Content-Type": "application/json",
