@@ -3,7 +3,7 @@ function login() {
     const phone = document.getElementById("phone").value.trim();
     const password = document.getElementById("password").value.trim();
 
-    fetch("http://localhost:8082/auth/tourist/login", {
+    fetch("https://namma-ooru-3.onrender.com/auth/tourist/login", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
@@ -24,7 +24,7 @@ function login() {
         localStorage.setItem("token", token);
 
         // ✅ GET USER BY PHONE
-        return fetch("http://localhost:8082/tourist/phone/" + phone)
+        return fetch("https://namma-ooru-3.onrender.com/tourist/phone/" + phone)
             .then(res => {
                 if (!res.ok) {
                     return res.text().then(text => {
@@ -75,7 +75,7 @@ function register() {
         return;
     }
 
-    fetch("http://localhost:8082/tourist/add", {
+    fetch("https://namma-ooru-3.onrender.com/tourist/add", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
@@ -93,7 +93,7 @@ function register() {
     .then(() => {
 
         // ✅ AUTO LOGIN
-        return fetch("http://localhost:8082/auth/tourist/login", {
+        return fetch("https://namma-ooru-3.onrender.com/auth/tourist/login", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -114,7 +114,7 @@ function register() {
             localStorage.setItem("token", token);
 
             // ✅ GET USER ID
-            return fetch("http://localhost:8082/tourist/phone/" + phone)
+            return fetch("https://namma-ooru-3.onrender.com/tourist/phone/" + phone)
                 .then(res => {
                     if (!res.ok) {
                         return res.text().then(text => {
