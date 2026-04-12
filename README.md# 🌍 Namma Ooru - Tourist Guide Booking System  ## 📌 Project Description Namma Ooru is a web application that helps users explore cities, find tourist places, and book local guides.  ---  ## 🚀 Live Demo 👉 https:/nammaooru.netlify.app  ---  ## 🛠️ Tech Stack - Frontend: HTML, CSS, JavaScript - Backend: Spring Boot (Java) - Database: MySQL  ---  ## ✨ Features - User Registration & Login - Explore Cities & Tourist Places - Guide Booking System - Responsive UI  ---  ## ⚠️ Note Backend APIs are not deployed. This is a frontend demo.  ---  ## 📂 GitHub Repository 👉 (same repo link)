@@ -1,0 +1,34 @@
+# 🌍 Namma Ooru - Tourist Guide Booking System
+
+## 📌 Project Description
+Namma Ooru is a web application that helps users explore cities, find tourist places, and book local guides.
+
+---
+
+## 🚀 Live Demo
+👉 https://nammaooru.netlify.app
+
+---
+
+## 🛠️ Tech Stack
+- Frontend: HTML, CSS, JavaScript
+- Backend: Spring Boot (Java)
+- Database: MySQL
+
+---
+
+## ✨ Features
+- User Registration & Login
+- Explore Cities & Tourist Places
+- Guide Booking System
+- Responsive UI
+
+---
+
+## ⚠️ Note
+Backend APIs are not deployed. This is a frontend demo.
+
+---
+
+## 📂 GitHub Repository
+👉 (same repo link)
